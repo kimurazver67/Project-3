@@ -5,7 +5,7 @@ header
 nav 
         height: 53px 
         background: #212121 
-.menu__list 
+.menu 
         display: flex 
         justify-content: space-between 
         padding-top: 15px 
@@ -15,9 +15,10 @@ nav
         margin: 0 
         list-style-type: none 
 .menu__item 
-        border-right: 1px solid #000 
-        border-style: dashed 
-        padding-right: 32px 
+        border-right: 1px dotted #000  
+        padding-right: 32px
+        &:last-child
+                border-right: none 
 .menu__link 
         font-size: 15px 
         font-weight: 300 
@@ -108,8 +109,8 @@ nav
         margin: 116px auto 0 auto
         @include btn__hover 
 .benifits 
-        min-height: 850px 
-        padding: 18px 0 64px 0 
+
+        padding: 71px 0 64px 0 
 .label 
         padding-top: 6px 
         text-align: center 
@@ -120,37 +121,41 @@ nav
         font-weight: 400 
         font-size: 11px 
         color: #fff 
-        margin: 20px auto 0 auto 
+        margin:0 auto 
         text-align: center
 .label__title 
-        margin-top: 32px 
+        margin-top: 38px 
         font-weight: 700 
         font-size: 38px 
         text-align: center 
         color: #222 
         text-transform: uppercase 
 .benifits__block 
-        display: flex 
-        align-items: center 
-        margin-top: 25px 
+        display: flex
+        justify-content: center
+        margin-top: 35px
 .text__block 
-        margin-left: 25px 
-        font-size: 17px 
-        width: 350px 
+        width: 343px 
 .text__item--title 
+        line-height: 21px
+        font-size: 17px
+        font-weight: 400
         color: #1EACC7 
 .text__item--info 
-        font-weight: 300 
+        font-weight: 300
+        line-height: 21px 
+        font-size: 15px
 .logo__item 
         margin: 0 auto 
 .ronded__logo 
         display: flex 
-        justify-content: space-between 
+        justify-content: center 
         align-items: center 
         background-color: #1EACC7 
         border-radius: 100% 
-        width: 116px 
-        height: 116px 
+        margin-right: 26px
+        width: 113px 
+        height: 113px 
 .mobile
         min-height: 840px
         padding:46px 0 80px 0
@@ -320,11 +325,8 @@ nav
     .subtitle__label
       color:#fff                    
     &__city
-      position: absolute
-      width: 223px
-      height: 68px
-      bottom: 0
-      left: 550px
+      text-align: center
+      margin-top: 456px
 
       &-link
         color: #1FBAD6
@@ -336,18 +338,16 @@ nav
   position: relative
   min-height: 156px
   padding: 11px 0 10px 0
-  &__line
-    position: absolute
-    top: 14px
-    left: 50%
-    transform: translateX(-50%)
+  &_divider
+    width: 229px
     height: 4px
-    width: 299px
-    background-color: #1FBAD6
+    background-color: $main_color
     margin: 0 auto
   &__social
     display: flex
+    justify-content: space-between
     margin-left: 23px
+    width: 160px
     
     
     &-link
@@ -365,36 +365,48 @@ nav
 .footer__block
   display: flex
   justify-content: space-between
+  align-items: flex-start
+  padding-top: 32px
+.footer__block > div
+  width: 33%
+  &:nth-child(3)
+    display: flex
+    justify-content: flex-end
+      
   
-  margin-top: 50px
-  padding: 0 23px
-  
+.footer__links--block
+  width: 390px
+  margin: 0 auto
 
 .block__text--link
-  position: absolute
+  display: flex
+  justify-content: space-between
   text-align: center
-  margin-top: 35px
-  top: 0
+  padding: 0 10px
+  
 
 
 .text__link
   text-transform: uppercase
   margin-right: 43px
   font-weight: 300
-  font-size: 15px 
+  font-size: 13px 
   color: #070716
 
 .block__text--link-small
-  position: absolute
-  top: 50px
+  
   display: flex
+  justify-content: space-between
+  text-align: center
+  
+  margin: 0 auto
   margin-top: 20px
   
   
 
 .text__link-small
     font-weight: 300
-    font-size: 11px
+    font-size: 10px
     color: #999999
     margin-right: 21px
     text-transform: uppercase   
@@ -407,4 +419,12 @@ nav
   color: #1FBAD6
   font-weight: 400
   font-size: 11px  
-  margin-top: 20px      
+  margin-top: 20px   
+
+.footer_mobile
+  display: flex
+  justify-content: space-between
+  width: 296px
+  height: 27px
+
+      
