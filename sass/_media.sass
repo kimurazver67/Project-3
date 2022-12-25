@@ -29,4 +29,286 @@
             font-size: 9px
     .subtitle
         font-size: 12px
-    
+    .subheader
+        &__link > img
+            width: 100%
+        .phone__number
+            font-size: 20px
+        &__btn
+            width: 100%
+            margin-top: 20px
+            height: 40px
+    .promo
+        &__title
+            font-size: 41px
+        &__subtitle
+            font-size: 25px
+        &__descr
+            font-size: 14px
+            line-height: 1.5rem
+    .label__title
+        font-size: 35px
+    .benifits
+        &__block
+            flex-direction: column
+            align-items: center
+        .text__block
+            margin-top: 20px
+    .mobile__item
+        width: 100%
+    .car__info
+       .car__info--img > img
+            transform: translateX(-6%)
+    .footer
+        &__block
+            flex-direction: column
+            justify-content: center
+            align-items: center
+        &__social
+            width: 100%
+            margin-left: 0
+        &__links--block
+            width: 100%
+            margin-top: 20px
+        .block__text--link
+            padding: 0
+        .footer__block > div
+            width: 48%
+        .text__link
+            margin-right: 0
+        .text__link-small
+            margin-right: 0
+        .footer__block>div
+            &:nth-child(3)
+                justify-content: center
+        .footer_mobile
+            padding: 0
+            margin-top: 10px
+@media(max-width: 767px)
+    .menu
+        position: fixed
+        top: 0
+        left: -100%
+        width: 50%
+        height: 100vh
+        padding: 20px 15px
+        flex-direction: column
+        background-color: rgba(0,0,0,0.8)
+        justify-content: center
+        align-items: center
+        transition: 0.8s all
+        &__active
+            left: 0
+            z-index: 2
+        &__item
+            padding-right: 0
+            border-right: none
+            margin: 10px 0
+        &__link
+            font-size: 20px
+    .hamburger
+        display: block
+        position: absolute
+        top: 20px
+        right: 10px
+        width: 26px
+        span
+            transition: 0.5s all
+            display: block
+            height: 2px
+            width: 100%
+            background-color: #fff
+            margin-bottom: 2px
+        &__active
+            span
+                transition: 0.5s all
+                margin-bottom: -2px
+                &:nth-child(1)
+                    transform: translateY(3px) rotate(-135deg)
+                &:nth-child(2)
+                    display: none
+                &:nth-child(3)
+                    transform: translateY(3px)  rotate(135deg)    
+                    
+    .xs__hidden
+        display: none
+    .subheader
+        .xs__visible
+            display: block
+            margin-top: 10px
+            display: block 
+            margin-top: 10px
+            color: #ffffff
+            font-size: 16px
+            font-weight: 400
+            text-transform: uppercase
+            text-align: center
+        .subheader__btn
+            height: 40px
+            width: 200px
+            display: block
+            margin: 0 auto
+            margin-top: 8px
+            font-size: 10px
+            font-weight: 400
+    .promo
+        &__title
+            font-size: 30px
+        &__subtitle
+            font-size: 21px
+        &__descr
+            font-size: 14px
+            line-height: 1.5rem
+        &__btn
+            width: 235px
+            height: 48px
+    .label__title
+        font-size: 30px        
+    .car__info
+       .car__info--img > img
+            transform: none
+            width: 100%
+
+@media(max-width: 574px)
+    .subtitle
+        display: none            
+    .subheader__link
+        margin-top: 21px
+    .subheader
+        height: 62px
+        .phone__number
+            font-size: 12px
+            margin-top: 12px
+        .subheader__btn
+            width: 110px
+            height: 22px
+            font-size: 9px
+            margin-top: 2px
+    .promo
+        min-height: 400px
+        padding-bottom: 35px
+        &__title
+            font-size: 30px
+            line-height: 35px
+            font-weight: 900
+            padding: 0 14px
+        &__subtitle
+            font-size: 20px
+            line-height: 23px
+            font-weight: 700
+            padding: 0 5px
+        &__descr
+            display: none
+        &__btn
+            margin-top: 72px
+            width: 210px
+            font-size: 16px
+            font-weight: 400
+    .menu
+        width: 85%
+    .benifits
+        .text__block
+            padding: 0 16px
+    .mobile
+        .mobile__item
+            width: 290px
+            height: 254px
+        .mobile__item--title
+            padding: 0 32px
+            font-size: 18px
+            line-height: 31px
+            font-weight: 400
+
+    .car__info
+        min-height: 393px
+        .car__info--bg
+            height: 393px
+            padding: 27px 0 0 0 
+        .car__info--subtitle
+            width: 100%
+            color: #fff
+            margin-top: 23px
+            font-size: 17px
+            font-weight: 300
+        .label__title
+            display: none
+        .subtitle__label
+            display: none
+        .car__info--img
+            margin-top: 34px
+        .car__info--bg-white
+            display: none
+    .terms
+        padding: 24px 0 0 0
+        .label__title
+            font-size: 16px
+            font-weight: 700
+        &__block
+            margin: 30px 16px 5px 16px
+        &__title
+            font-size: 16px
+            line-height: 24px
+            font-weight: 400
+        &__list
+            margin-top: 5px
+            padding-left: 16px
+            li
+                font-size: 14px
+                font-weight: 300
+        &__descr
+            font-size: 14px
+            font-weight: 300
+    .world
+        min-height: 360px
+        &__wrapper
+            padding: 26px 0 30px 0
+            min-height: 360px
+            .label
+                font-size: 11px
+                font-weight: 400
+            .label__title
+                margin-top: 14px
+                font-size: 16px
+                font-weight: 700
+            .subtitle__label
+                font-size: 14px
+                line-height: 21px
+                font-weight: 400
+            .world__wrapper__city
+                margin-top: 211px
+    .footer
+        .footer__block
+            padding-top: 20px
+        .footer__links--block
+            margin-top: 0
+        .footer__block > div
+            width: 100%
+            &:nth-child(1)
+                order: 2
+            &:nth-child(2)
+                order: 1
+            &:nth-child(3)
+                order: 3
+        .footer__social
+            margin-left: 0
+            justify-content: center 
+            margin-top: 20px
+            margin-bottom: 10px
+        .block__text--link
+            display: flex
+            text-align: center
+            justify-content: center
+            margin-left: 19px
+            margin-right: 6px                   
+            .text__link
+                margin-right: 13px
+                font-weight: 300
+        .block__text--link-small
+                display: block
+                text-align: center
+                margin: 0 34px 0 34px
+                margin-top: 10px
+
+            
+
+
