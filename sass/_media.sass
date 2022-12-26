@@ -184,6 +184,8 @@
             height: 22px
             font-size: 9px
             margin-top: 2px
+            &:hover
+                background-image: linear-gradient(to top, $main_color 0%, #4ce2ff 100%)
     .promo
         min-height: 400px
         padding-bottom: 35px
@@ -204,8 +206,16 @@
             width: 210px
             font-size: 16px
             font-weight: 400
+            &:hover
+                background-image: linear-gradient(to top, $main_color 0%, #4ce2ff 100%)
     .menu
         width: 85%
+        &__item
+            width: 100%
+            text-align: center
+            padding: 4px 0
+            .menu__link
+                display: block
     .benifits
         .text__block
             padding: 0 16px
